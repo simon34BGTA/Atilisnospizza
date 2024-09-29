@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atiliano's Pizza</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Lora', serif;
+            background-image: url('https://source.unsplash.com/1600x900/?pizza');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        nav ul li a {
+            color: #333;
+        }
+
+        main.container {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+        }
+
+        h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e74c3c;
+        }
+
+        .cta-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
+        .gallery img {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        footer small a {
+            color: #e74c3c;
+            margin-right: 10px;
+        }
+
+        /* Estilos adicionales para contacto */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="container-fluid">
+        <ul>
+            <li><strong><img src="logo.jpg" alt="Atiliano's Pizza" style="width: 50px; height: auto;"></strong></li>
+        </ul>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#attiliano">Atiliano</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#menu">Carta</a></li>
+            <li><a href="#mision-vision">Misión y Visión</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inicio -->
+    <main class="container" id="inicio" data-aos="fade-up">
+        <section>
+            <hgroup>
+                <h2>La Historia de la Pizza</h2>
+                <h3>Un Viaje a través del Tiempo</h3>
+            </hgroup>
+            <p>Desde la antigua Roma hasta el mundo moderno, la pizza ha recorrido un largo camino. En Atiliano's Pizza, honramos esa tradición con cada bocado. ¡Descubre por qué somos los mejores en Jamundí!En Atiliano's Pizza, creemos que cada bocado cuenta una historia. Ubicados en el corazón de la ciudad, nuestro restaurante se dedica a ofrecer una experiencia gastronómica única que fusiona la tradición italiana con un toque contemporáneo colombiano.
+
+                Nuestro menú está repleto de pizzas artesanales, elaboradas con ingredientes frescos y de alta calidad. Desde la clásica Margherita hasta combinaciones innovadoras, cada pizza es una obra maestra creada con pasión y dedicación. También ofrecemos opciones vegetarianas y sin gluten, para que todos puedan disfrutar de nuestras delicias.
+                
+                Además de nuestras pizzas, en Atiliano's Pizza nos enorgullece ofrecer un ambiente acogedor y familiar, ideal para disfrutar en pareja, con amigos o en una reunión familiar. Nuestro personal amable y atento está siempre listo para hacer de tu visita una experiencia memorable.
+                
+                Ven y descubre por qué Atiliano's Pizza es el lugar perfecto para los amantes de la buena comida. ¡Te esperamos con los brazos abiertos y un horno lleno de sabor!
+                
+                </p>
+            <figure class="gallery">
+                <img src="pizza muestra.jpg" alt="Historia de la pizza">
+                <figcaption>Una historia que trasciende generaciones</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Sección: Sobre Nosotros -->
+    <main class="container" id="sobre-nosotros" data-aos="fade-up">
+        <section>
+            <hgroup>
+                <h2>Sobre Nosotros</h2>
+                <h3>Nacimos en noviembre de 2023</h3>
+            </hgroup>
+            <p>Fundado por Atiliano, un chef con más de 25 años de experiencia en la gastronomía, nuestro objetivo es ofrecer una experiencia culinaria única en cada visita.
+
+                Desde el primer día, Atiliano se comprometió a utilizar solo los mejores ingredientes, seleccionando cuidadosamente productos frescos y locales para crear nuestras deliciosas pizzas artesanales. Nuestra carta incluye una variedad de opciones que satisfacen todos los paladares, desde las clásicas hasta las más creativas, asegurando que cada cliente encuentre su favorito.
+                
+                En Atiliano's Pizza, no solo nos enfocamos en la comida, sino también en el ambiente. Nuestro restaurante está diseñado para ser un espacio acogedor y familiar, donde amigos y seres queridos pueden reunirse y disfrutar de momentos inolvidables. Cada detalle, desde la decoración hasta el servicio, refleja nuestra dedicación a hacer de tu visita una experiencia excepcional.
+                
+                Te invitamos a ser parte de nuestra historia y a disfrutar de una pizza que no solo alimenta el cuerpo, sino también el alma. ¡Gracias por elegir Atiliano's Pizza!
+                
+                </p>
+            <!-- Imagen añadida -->
+            <figure class="gallery">
+                <img src="logo.jpg" alt="Sobre Nosotros">
+                <figcaption>Conoce nuestra historia</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Sección: Atiliano -->
+    <main class="container" id="attiliano" data-aos="fade-up">
+        <section>
+            <hgroup>
+                <h2>Atiliano</h2>
+                <h3>Un Profesional de la Pizza con 25 Años de Experiencia</h3>
+            </hgroup>
+            <p>Atiliano's Pizza nació del sueño y la pasión de su fundador, Atiliano, quien durante más de 25 años estudió minuciosamente el arte de la pizza. Su camino en la gastronomía lo llevó a adquirir experiencia trabajando en algunos de los restaurantes más reconocidos de Jamundí, como Las Casitas, Sazón y Sifón, donde fue accionista. A lo largo de los años, Atiliano perfeccionó sus recetas y técnicas, hasta que decidió embarcarse en su propia aventura, creando un espacio donde pudiera compartir con el mundo su amor por la auténtica pizza artesanal.
+
+                En Atiliano's Pizza, cada receta es el resultado de años de aprendizaje y dedicación, utilizando solo los ingredientes más frescos y de la mejor calidad. Nuestro menú refleja la tradición, pero con un toque contemporáneo que distingue a cada una de nuestras creaciones.
+                
+                Te invitamos a ser parte de esta historia y a disfrutar de una experiencia culinaria que solo Atiliano's Pizza puede ofrecer. ¡Gracias por elegirnos!</p>
+            <figure>
+                <img src="ATILIANOIMGN.jpg" alt="Atiliano" style="border: 5px solid #e74c3c;">
+                <figcaption>Atiliano, el maestro pizzero</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Sección: Ubicación -->
+    <main class="container" id="ubicacion" data-aos="fade-up">
+        <section>
+            <hgroup>
+                <h2>Ubicación</h2>
+                <h3>Jamundí, Carrera 2a. Sur #7-05, Parque de Castilla</h3>
+            </hgroup>
+            <p>Nos encontramos en un lugar accesible en Jamundí. ¡Visítanos y disfruta de la mejor pizza!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.57386005353!2d-76.53675345900878!3d3.2590360662182404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30bcba40a94d25%3A0x4215e5abaca84d8f!2sParque%20de%20Castilla%2C%20Jamund%C3%AD!5e0!3m2!1ses!2sco!4v1696272742072!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <!-- Sección: Carta -->
+    <main class="container" id="menu" data-aos="fade-up">
+        <section>
+            <hgroup>
+                <h2>Carta</h2>
+                <h3>Nuestros Platillos</h3>
+            </hgroup>
+            <p>Dos cartas que representan lo mejor de Atiliano's Pizza. ¡Disfruta de nuestra variedad de pizzas y pizzas unicas únicos!</p>
+            <figure class="gallery">
+                <img src="carta 1.jpg" alt="Carta 1">
+                <figcaption>Carta 1</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="carta.jpg" alt="Carta 2">
+                <figcaption>Carta 2</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Sección: Misión y Visión -->
+    <main class="container" id="mision-vision" data-aos="fade-up">
+        <section>
+            <hgroup>
+                <h2>Misión, Visión y Valores</h2>
+                <h3>Nuestros Fundamentos</h3>
+            </hgroup>
+            <p>Misión
+                En Atiliano's Pizza, nos esforzamos por llevar a nuestros clientes el verdadero arte de la pizza, fruto de más de 25 años de experiencia y dedicación de nuestro fundador, Atiliano. Nos comprometemos a ofrecer sabores auténticos, utilizando ingredientes de la más alta calidad y manteniendo un servicio excepcional que convierta cada visita en una experiencia inolvidable.
+                
+                Visión
+                Nuestra visión es convertirnos en el referente de pizza artesanal en Jamundí y más allá, destacando por nuestra calidad, innovación y atención al cliente. Aspiramos a expandir nuestra marca y llevar la pasión de Atiliano por la pizza a nuevos mercados, siempre manteniendo nuestra esencia y compromiso con la excelencia.
+                
+                Valores
+                Experiencia: Con más de 25 años de estudio y dedicación a la pizza, valoramos el conocimiento profundo y constante perfeccionamiento en lo que hacemos.
+                Calidad: Seleccionamos los mejores ingredientes frescos y locales para garantizar que cada pizza sea una obra de arte.
+                Compromiso: Nos esforzamos por ofrecer una experiencia única a cada cliente, superando sus expectativas en cada visita.
+                Innovación: A pesar de nuestras raíces tradicionales, nos mantenemos a la vanguardia con nuevas ideas y sabores que sorprenden a nuestros clientes.
+                Honestidad: Creemos en ser transparentes con nuestros clientes, brindando siempre productos auténticos y de excelente calidad.
+                Comunidad: Valoramos nuestras raíces en Jamundí, y nos esforzamos por ser un pilar de la comunidad local, apoyando el crecimiento y bienestar de nuestro entorno</p>
+            <ul>
+                <li>Calidad</li>
+                <li>Pasión</li>
+                <li>Compromiso</li>
+            </ul>
+            <!-- Imagen añadida -->
+            <figure class="gallery">
+                <img src="https://images.squarespace-cdn.com/content/56128258e4b01402b90e3e13/1453493962033-SLU9UMYEPO5VHKHI8NGT/vision-mision-valores.jpg?content-type=image%2Fjpeg" alt="Valores de la empresa">
+                <figcaption>Nuestros Valores</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Sección: Contacto -->
+    <main class="container" id="contacto" data-aos="fade-up">
+        <section>
+            <hgroup>
+                <h2>Contacto</h2>
+                <h3>Escríbenos tus dudas o comentarios</h3>
+            </hgroup>
+            <form class="contact-form">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Botón de WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://api.whatsapp.com/send/?phone=573215107137&text&type=phone_number&app_absent=0" target="_blank">
+            <i class="fab fa-whatsapp"></i> ¿Necesitas ayuda? ¡Contáctanos!</a></div>
+    <!-- Footer -->
+    <footer class="container">
+        <small>
+            <a href="#sobre-nosotros">Sobre nosotros</a> • 
+            <a href="#contacto">Contacto</a> • 
+            <a href="#">Términos y condiciones</a> • 
+            <a href="#">Política de privacidad</a>
+        </small>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/atiliano_spzz/?igsh=MTYzOGNsMjEzNDBnNg%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
